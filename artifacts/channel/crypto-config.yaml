@@ -17,8 +17,8 @@ OrdererOrgs:
             - "127.0.0.1"
       - Hostname: orderer2
         SANS:
-          - "localhost"
-          - "127.0.0.1"
+            - "localhost"
+            - "127.0.0.1"
       - Hostname: orderer3
         SANS:
             - "localhost"
@@ -27,6 +27,8 @@ OrdererOrgs:
         SANS:
             - "localhost"
             - "127.0.0.1"
+        CA:
+            - OrganizationalUnit: admin            
 
 # ---------------------------------------------------------------------------
 # "PeerOrgs" - Definition of organizations managing peer nodes

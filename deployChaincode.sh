@@ -255,19 +255,24 @@ chaincodeQuery() {
 # presetup
 
 packageChaincode
+sleep 5
 installChaincode
-
+sleep 5
 queryInstalled
 approveForMyOrg1
+sleep 5
 checkCommitReadyness
+sleep 5
+queryInstalled
 approveForMyOrg2
+sleep 5
 checkCommitReadyness
-
+sleep 5
 commitChaincodeDefination
+sleep 5
 queryCommitted
 chaincodeInvokeInit
-
 sleep 5
 chaincodeInvoke
-sleep 3
+sleep 5
 chaincodeQuery
